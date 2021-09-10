@@ -3,6 +3,7 @@ import Footer from "../components/footer"
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
 import React from "react";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
 
     <Grid container spacing={2}>
       <Grid item xs>
-        <img className="bannerhero" src="https://picsum.photos/1024/400" />
+        <Image alt="img0" className="bannerhero" src="https://picsum.photos/1024/400" />
       </Grid>
     </Grid>
 
@@ -22,19 +23,19 @@ export default function Home() {
         </Grid>
 
         <Grid item xs={3}>
-          <img src="https://picsum.photos/200/300"/>
+          <Image alt="img1" src="https://picsum.photos/200/300"/>
         </Grid>
 
         <Grid item xs={3}>
-          <img src="https://picsum.photos/200/300"/>
+          <Image alt="img2" src="https://picsum.photos/200/300"/>
         </Grid>
 
         <Grid item xs={3}>
-          <img src="https://picsum.photos/200/300"/>
+          <Image alt="img3" src="https://picsum.photos/200/300"/>
         </Grid>
 
         <Grid item xs={3}>
-          <img src="https://picsum.photos/200/300"/>
+          <Image alt="img4" src="https://picsum.photos/200/300"/>
         </Grid>
       </Grid>
     </Container>

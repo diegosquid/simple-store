@@ -1,4 +1,6 @@
 /* eslint-disable react/jsx-filename-extension */
+/* eslint-disable react/display-name */
+
 import React from 'react';
 import Document, {
   Head, Html, Main, NextScript,
@@ -6,7 +8,7 @@ import Document, {
 import { ServerStyleSheets } from '@material-ui/core/styles';
 import theme from "../theme"
 
-export default class MyDocument extends Document {
+class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
@@ -54,3 +56,5 @@ MyDocument.getInitialProps = async (ctx) => {
     styles: [...React.Children.toArray(initialProps.styles), sheets.getStyleElement()],
   };
 };
+
+export default MyDocument
